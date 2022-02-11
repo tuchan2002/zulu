@@ -1,6 +1,6 @@
 .started {
     max-width: 900px;
-    margin: 0 auto 50px;
+    margin: 0 auto 60px;
     border-radius: 20px;
     background-color: #fbfbfb;
     position: relative;
@@ -23,12 +23,25 @@
     &-comment {
         position: absolute;
         bottom: 50px;
-        left: 50px;
+        left: 20px;
     }
     &-smile {
         position: absolute;
         top: 0;
         right: 0;
-        transform: translate(25%,-25%);
+        transform: translate(15%,-25%);
+    }
+    @media screen and (max-width: 991px) {
+        &-comment,
+        &-smile {
+            max-width: 20%;
+            transform: none;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-comment,
+        &-smile {
+            max-width: 20%;
+        }
     }
 }

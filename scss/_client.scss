@@ -59,5 +59,22 @@
             font-size: 20px;
         }
     }
+    @media screen and (max-width: 1023px) {
+        &-list {
+            column-gap: 20px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &-list {
+            margin-bottom: 36px;
+        }
+        &-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-item {
+            max-width: 400px;
+            margin: 0 auto 28px;
+        }
+    }
     
 }

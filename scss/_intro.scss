@@ -6,10 +6,28 @@
         width: 50%;
     }
     &-content {
-        padding-right: 120px;
+        padding-right: 100px;
     }
     &-desc {
         margin-top: 36px;
         margin-bottom: 28px;
+    }
+    @media screen and (max-width: 1023px) {
+        &-content {
+            padding-right: 20px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        padding: 25px 0 60px;
+        display: block;
+        & > * {
+            width: 100%;
+        }
+        &-desc {
+            margin-top: 24px;
+        }
+        &-content {
+            margin-bottom: 28px;
+        }
     }
 }

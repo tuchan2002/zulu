@@ -80,4 +80,15 @@
         width: max-content;
         margin-top: auto;
     }
+
+    @media screen and (max-width: 991px) {
+        padding-bottom: 60px;
+        &-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-item {
+            max-width: 400px;
+            margin: 0 auto 28px;
+        }
+    }
 }

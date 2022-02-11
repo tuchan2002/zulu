@@ -4,7 +4,7 @@
     &-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 70px;
+        column-gap: 70px;
     }
     &-item {
         padding: 40px 28px;
@@ -44,5 +44,20 @@
         overflow: hidden;
         text-overflow: ellipsis;
         word-break: break-word;
+    }
+    @media screen and (max-width: 1023px) {
+        &-list {
+            column-gap: 24px;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 80px;
+        &-list {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-item {
+            max-width: 460px;
+            margin: 0 auto 24px;
+        }
     }
 }

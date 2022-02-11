@@ -1,5 +1,5 @@
 .header {
-    margin-top: 44px;
+    padding-top: 44px;
     display: flex;
     align-items: center;
     &-logo {
@@ -23,5 +23,26 @@
         &:hover {
             color: $primary-color;
         }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header-logo {
+        margin-right: 0;
+    }
+    .header-menu {
+        display: none;
+    }
+    .header-auth {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding-top: 20px;
+    }
+    .header-logo-image {
+        max-width: 90px;
     }
 }

@@ -1,8 +1,15 @@
 .footer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    column-gap: 20px;
+    grid-column-gap: 10px;
     padding-bottom: 80px;
+    &-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     &-logo {
         display: inline-block;
     }
@@ -42,4 +49,11 @@
 
 .social-link:not(:first-child) {
     margin-left: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
 }
