@@ -1,0 +1,63 @@
+.client {
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 70px;
+        margin-bottom: 88px;
+    }
+    &-item {
+        padding: 44px 24px;
+        border: 1px solid #eee;
+        border-radius: 20px;
+        text-align: center;
+        transition: all 0.2s linear;
+    }
+    &-item:hover {
+        border-color: transparent;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,0.05);
+    }
+    &-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 120px;
+        object-fit: cover;
+        margin: 0 auto 25px;
+    }
+    &-name {
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    &-position {
+        color: $gray;
+        font-size: 14px;
+        display: block;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #eee;
+    }
+    &-content {
+        color: $gray;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.8;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        margin-bottom: 30px;
+    }
+    &-rate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+            margin: 0 4px;
+            color: $yellow;
+            font-size: 20px;
+        }
+    }
+    
+}

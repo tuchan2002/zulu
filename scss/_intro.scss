@@ -1,0 +1,15 @@
+.intro {
+    display: flex;
+    align-items: center;
+    padding: 110px 0 160px;
+    & > * {
+        width: 50%;
+    }
+    &-content {
+        padding-right: 120px;
+    }
+    &-desc {
+        margin-top: 36px;
+        margin-bottom: 28px;
+    }
+}

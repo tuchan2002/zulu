@@ -1,0 +1,83 @@
+.plan {
+    padding-bottom: 100px;
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 45px;
+    }
+    &-item {
+        border: 1px solid #eee;
+        border-radius: 20px;
+        padding: 68px 24px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition: all 0.2s linear;
+    }
+    &-item:hover {
+        border-color: transparent;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,0.05);
+    }
+    &-item:hover .plan-start {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: #fff;
+    }
+    &-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 16px;
+        background-color: $pink;
+        color: #fff;
+        border-radius: 0 20px 0 20px;
+    }
+    &-name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+    &-price {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 28px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #eee;
+    }
+    &-symbol {
+        vertical-align: top;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    &-month {
+        font-weight: 600;
+        font-size: 40px;
+    }
+    &-desc {
+        margin-bottom: 32px;
+    }
+    &-feature {
+        font-size: 20px;
+        margin-bottom: 32px;
+        font-weight: 500;
+    }
+    &-feature-list {
+        margin-bottom: 64px;
+    }
+    &-feature-item {
+        display: flex;
+        align-items: center;
+        color: $gray;
+        margin-bottom: 24px;
+    }
+    &-feature-icon {
+        font-size: 20px;
+        margin-right: 12px;
+    }
+    &-start {
+        margin: 0 auto;
+        display: block;
+        width: max-content;
+        margin-top: auto;
+    }
+}

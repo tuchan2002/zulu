@@ -1,0 +1,48 @@
+.work {
+    padding-top: 145px;
+    padding-bottom: 50px;
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;
+    }
+    &-item {
+        padding: 40px 28px;
+        border: 1px solid $gray-light;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.4;
+        transition: all 0.2s linear;
+    }
+    &-item:hover {
+        border-color: transparent;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,0.05);
+    }
+    &-item:hover .work-more {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: #fff;
+    }
+    &-image {
+        margin-bottom: 36px;
+        max-height: 115px;
+    }
+    &-title {
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    &-desc {
+        margin-bottom: 32px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+}
